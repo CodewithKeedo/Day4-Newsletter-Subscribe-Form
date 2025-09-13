@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Four Newsletter Subscribe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="subscribe-container" id="formContainer">
+    <h2>Join Our Premium Newsletter</h2>
+    <p>Exclusive tips, insights & updates. Be the first to know.</p>
+    <form id="subscribeForm">
+      <div class="input-group">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12l-4-4-4 4m8 0l-4 4-4-4" />
+        </svg>
+        <input type="email" id="emailInput" placeholder=" ">
+        <label for="emailInput">Email Address</label>
+      </div>
+      <button type="submit">Subscribe</button>
+      <div class="message" id="formMessage"></div>
+    </form>
+
+    <!-- Success state -->
+    <div class="success-check" id="successState">
+      <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+        <circle cx="26" cy="26" r="25" fill="none"/>
+        <path class="checkmark__check" fill="none" d="M14 27l7 7 16-16"/>
+      </svg>
+      <h3 style="margin-top:1rem;color:#16a34a;">You’re subscribed! 🎉</h3>
+    </div>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
